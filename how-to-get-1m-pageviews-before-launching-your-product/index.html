@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to get 1M pageviews before launching your product</title>
+    <link rel="stylesheet" href="/assets/built/screen.css?v=054beaa5c2">
+
+
+    <style>
+        :root {
+            --background-color: #ffffff
+        }
+    </style>
+
+    <script>
+        /* The script for calculating the color contrast was taken from
+        https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
+        var accentColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+        accentColor = accentColor.trim().slice(1);
+        var r = parseInt(accentColor.substr(0, 2), 16);
+        var g = parseInt(accentColor.substr(2, 2), 16);
+        var b = parseInt(accentColor.substr(4, 2), 16);
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
+
+        document.documentElement.className = `has-${textColor}-text`;
+    </script>
+
+    <link rel="canonical" href="https://henry.sztul.com/how-to-get-1m-pageviews-before-launching-your-product/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Henry Sztul">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to get 1M pageviews before launching your product">
+    <meta property="og:description" content="Earlier this month we launched Shelby.tv for iPhone.We had been building it (and several iterations of it) for several months, but before launching, we already had &gt;1M page views/month. With this traffic, we were able to do lots of A/B testing, load testing, and product development">
+    <meta property="og:url" content="https://henry.sztul.com/how-to-get-1m-pageviews-before-launching-your-product/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fHBhZ2V2aWV3fGVufDB8fHx8MTc0OTE0NTEwOXww&amp;ixlib&#x3D;rb-4.1.0&amp;q&#x3D;80&amp;w&#x3D;2000">
+    <meta property="article:published_time" content="2013-12-03T14:00:00.000Z">
+    <meta property="article:modified_time" content="2025-06-05T17:38:34.000Z">
+    <meta property="article:tag" content="dev">
+    <meta property="article:tag" content="growth">
+    <meta property="article:tag" content="product">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to get 1M pageviews before launching your product">
+    <meta name="twitter:description" content="Earlier this month we launched Shelby.tv for iPhone.We had been building it (and several iterations of it) for several months, but before launching, we already had &gt;1M page views/month. With this traffic, we were able to do lots of A/B testing, load testing, and product development">
+    <meta name="twitter:url" content="https://henry.sztul.com/how-to-get-1m-pageviews-before-launching-your-product/">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fHBhZ2V2aWV3fGVufDB8fHx8MTc0OTE0NTEwOXww&amp;ixlib&#x3D;rb-4.1.0&amp;q&#x3D;80&amp;w&#x3D;2000">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Henry Sztul">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="dev, growth, product">
+    <meta name="twitter:site" content="@sztul">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Henry Sztul",
+        "url": "https://henry.sztul.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://henry.sztul.com/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Henry Sztul",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.gravatar.com/avatar/57af685730300407769b60488c2e88fc?s=250&r=x&d=mp",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://henry.sztul.com/author/henry/",
+        "sameAs": []
+    },
+    "headline": "How to get 1M pageviews before launching your product",
+    "url": "https://henry.sztul.com/how-to-get-1m-pageviews-before-launching-your-product/",
+    "datePublished": "2013-12-03T14:00:00.000Z",
+    "dateModified": "2025-06-05T17:38:34.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fHBhZ2V2aWV3fGVufDB8fHx8MTc0OTE0NTEwOXww&ixlib=rb-4.1.0&q=80&w=2000",
+        "width": 1200,
+        "height": 800
+    },
+    "keywords": "dev, growth, product",
+    "description": "\n\n\n\nEarlier this month we launched Shelby.tv for iPhone.We had been building it (and several iterations of it) for several months, but before launching, we already had &gt;1M page views/month. With this traffic, we were able to do lots of A/B testing, load testing, and product development before our launch to prepare.\n\n\n\nA question we hear a lot of is:\n\n\n\n\n\n\n“So, how’d you get all that traffic before you launched?”\n\n\n\n\nThis is meant to be a high level, non-technical overview of what we did at Shelb",
+    "mainEntityOfPage": "https://henry.sztul.com/how-to-get-1m-pageviews-before-launching-your-product/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.121">
+    <link rel="alternate" type="application/rss+xml" title="Henry Sztul" href="https://henry.sztul.com/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="ba0b0a4cbb0a3ca7b0d03716ab" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="https://henry.sztul.com/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://henry.sztul.com/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=054beaa5c2"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=054beaa5c2">
+    <script defer src="/public/comment-counts.min.js?v=054beaa5c2" data-ghost-comments-counts-api="https://henry.sztul.com/members/api/comments/counts/"></script><style>:root {--ghost-accent-color: #FF1A75;}</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    :where(.nav, .gh-head-menu) .nav-bluesky a,
+    :where(.nav, .gh-head-menu) .nav-linkedin a,
+    :where(.nav, .gh-head-menu) .nav-instagram a,
+    :where(.nav, .gh-head-menu) .nav-github a,
+    :where(.nav, .gh-head-menu) .nav-twitter a {
+        font-size: 0 !important;
+    }
+
+    :where(.nav, .gh-head-menu) .nav-bluesky a::before,
+    :where(.nav, .gh-head-menu) .nav-linkedin a::before,
+    :where(.nav, .gh-head-menu) .nav-instagram a::before,
+    :where(.nav, .gh-head-menu) .nav-github a::before,
+    :where(.nav, .gh-head-menu) .nav-twitter a::before {
+        font-family: "Font Awesome 6 Brands";
+        display: inline-block;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    :where(.nav, .gh-head-menu) .nav-bluesky a::before {content: "\e671"}
+    :where(.nav, .gh-head-menu) .nav-linkedin a::before {content: "\f08c"}
+    :where(.nav, .gh-head-menu) .nav-instagram a::before {content: "\f16d"}
+    :where(.nav, .gh-head-menu) .nav-github a::before {content: "\f09b"}
+    :where(.nav, .gh-head-menu) .nav-twitter a::before {content: "\e61b"}
+    .gh-section-title {
+      font-size: 2.4rem !important;
+      font-weight: bold !important;
+      color: #333 !important;
+    }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Target specifically the header navigation links
+    const headerLinks = document.querySelectorAll('header nav a');
+    headerLinks.forEach(function(link) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer'); // Added for security best practices
+    });
+});
+</script>
+
+<script defer src="https://cloud.umami.is/script.js" data-website-id="6b0cf069-6c0b-4584-b1ff-1fb5ee668d4c"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net"><link rel="stylesheet" href="https://fonts.bunny.net/css?family=noto-sans:400,700|noto-serif:400,700"><style>:root {--gh-font-heading: Noto Sans;--gh-font-body: Noto Serif;}</style>
+</head>
+
+<body class="post-template tag-dev tag-growth tag-product tag-hash-import-2025-01-24-12-48 tag-hash-import-2025-06-05-17-33 gh-font-heading-noto-sans gh-font-body-noto-serif is-head-left-logo has-classic-feed">
+<div class="gh-site">
+
+    <header id="gh-head" class="gh-head gh-outer">
+        <div class="gh-head-inner gh-inner">
+            <div class="gh-head-brand">
+                <div class="gh-head-brand-wrapper">
+                    <a class="gh-head-logo" href="https://henry.sztul.com">
+                            Henry Sztul
+                    </a>
+                </div>
+                <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5 17.5L12.5 12.5L17.5 17.5ZM14.1667 8.33333C14.1667 9.09938 14.0158 9.85792 13.7226 10.5657C13.4295 11.2734 12.9998 11.9164 12.4581 12.4581C11.9164 12.9998 11.2734 13.4295 10.5657 13.7226C9.85792 14.0158 9.09938 14.1667 8.33333 14.1667C7.56729 14.1667 6.80875 14.0158 6.10101 13.7226C5.39328 13.4295 4.75022 12.9998 4.20854 12.4581C3.66687 11.9164 3.23719 11.2734 2.94404 10.5657C2.65088 9.85792 2.5 9.09938 2.5 8.33333C2.5 6.78624 3.11458 5.30251 4.20854 4.20854C5.30251 3.11458 6.78624 2.5 8.33333 2.5C9.88043 2.5 11.3642 3.11458 12.4581 4.20854C13.5521 5.30251 14.1667 6.78624 14.1667 8.33333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+                <button class="gh-burger" aria-label="Toggle menu"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-linkedin"><a href="https://linkedin.com/in/henrysztul">LinkedIn</a></li>
+    <li class="nav-bluesky"><a href="https://bsky.app/profile/sztul.com">BlueSky</a></li>
+    <li class="nav-twitter"><a href="https://x.com/sztul">Twitter</a></li>
+    <li class="nav-github"><a href="https://github.com/hsztul">Github</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-head-actions">
+                        <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5 17.5L12.5 12.5L17.5 17.5ZM14.1667 8.33333C14.1667 9.09938 14.0158 9.85792 13.7226 10.5657C13.4295 11.2734 12.9998 11.9164 12.4581 12.4581C11.9164 12.9998 11.2734 13.4295 10.5657 13.7226C9.85792 14.0158 9.09938 14.1667 8.33333 14.1667C7.56729 14.1667 6.80875 14.0158 6.10101 13.7226C5.39328 13.4295 4.75022 12.9998 4.20854 12.4581C3.66687 11.9164 3.23719 11.2734 2.94404 10.5657C2.65088 9.85792 2.5 9.09938 2.5 8.33333C2.5 6.78624 3.11458 5.30251 4.20854 4.20854C5.30251 3.11458 6.78624 2.5 8.33333 2.5C9.88043 2.5 11.3642 3.11458 12.4581 4.20854C13.5521 5.30251 14.1667 6.78624 14.1667 8.33333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+            </div>
+        </div>
+    </header>
+
+    
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+            <article class="gh-article post tag-dev tag-growth tag-product tag-hash-import-2025-01-24-12-48 tag-hash-import-2025-06-05-17-33 featured">
+                    <header class="gh-article-header gh-canvas">
+                        <h1 class="gh-article-title">How to get 1M pageviews before launching your product</h1>
+                            <figure class="gh-article-image has-caption">
+        <img
+            srcset="https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fHBhZ2V2aWV3fGVufDB8fHx8MTc0OTE0NTEwOXww&amp;ixlib&#x3D;rb-4.1.0&amp;q&#x3D;80&amp;w&#x3D;300 300w,
+                    https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fHBhZ2V2aWV3fGVufDB8fHx8MTc0OTE0NTEwOXww&amp;ixlib&#x3D;rb-4.1.0&amp;q&#x3D;80&amp;w&#x3D;720 720w,
+                    https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fHBhZ2V2aWV3fGVufDB8fHx8MTc0OTE0NTEwOXww&amp;ixlib&#x3D;rb-4.1.0&amp;q&#x3D;80&amp;w&#x3D;960 960w,
+                    https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fHBhZ2V2aWV3fGVufDB8fHx8MTc0OTE0NTEwOXww&amp;ixlib&#x3D;rb-4.1.0&amp;q&#x3D;80&amp;w&#x3D;1200 1200w,
+                    https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fHBhZ2V2aWV3fGVufDB8fHx8MTc0OTE0NTEwOXww&amp;ixlib&#x3D;rb-4.1.0&amp;q&#x3D;80&amp;w&#x3D;2000 2000w,
+                    https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fHBhZ2V2aWV3fGVufDB8fHx8MTc0OTE0NTEwOXww&amp;ixlib&#x3D;rb-4.1.0&amp;q&#x3D;80&amp;w&#x3D;2000"
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            src="https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fHBhZ2V2aWV3fGVufDB8fHx8MTc0OTE0NTEwOXww&amp;ixlib&#x3D;rb-4.1.0&amp;q&#x3D;80&amp;w&#x3D;1200"
+            alt="How to get 1M pageviews before launching your product"
+        >
+            <figcaption><span style="white-space: pre-wrap;">Photo by </span><a href="https://unsplash.com/@justin_morgan?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit"><span style="white-space: pre-wrap;">Justin Morgan</span></a><span style="white-space: pre-wrap;"> / </span><a href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit"><span style="white-space: pre-wrap;">Unsplash</span></a></figcaption>
+    </figure>
+                    </header>
+
+                <section class="gh-content gh-canvas">
+                    
+<!--kg-card-begin: html-->
+<p>Earlier this month we launched Shelby.tv for iPhone.We had been building it (and several iterations of it) for several months, but before launching, we already had >1M page views/month. With this traffic, we were able to do lots of A/B testing, load testing, and product development before our launch to prepare.</p>
+
+<p>A question we hear a lot of is:</p>
+
+<blockquote>
+  <p>“So, how’d you get all that traffic before you launched?”</p>
+</blockquote>
+
+<p>This is meant to be a high level, non-technical overview of what we did at Shelby to get us there. It’s easier said than done but read on for strategies to get to your own 1 Million page views.</p>
+
+<h2 id="definewhatyoumeanbylaunch">Define what you mean by LAUNCH.</h2>
+
+<p>Launching a product can mean a variety of things to different people. An apparent lack of definition around WHAT a product launch means can be tough for some to come to grips with, but it’s really a tool to use to your advantage!</p>
+
+<p>At <a href="http://shelby.tv/?ref=localhost">Shelby.tv</a>, we had a product in “beta” for a few months that we were using to test ideas, concepts, and most importantly our API so that it was ready for the launch of our iPhone app.</p>
+
+<p>Launch for us was releasing our app in the Apple App Store, going to the press with our story, sending about 45k emails, and a slew of other tactics to spread the word about our app.</p>
+
+<h2 id="clearlydefineyouratomicunit">Clearly define your atomic unit.</h2>
+
+<p>Definition can be helpful on so many levels, but especially when trying to generate an audience for whatever it is that you’re working on.</p>
+
+<p>We define Shelby.tv as the best way to discover and enjoy new videos everyday and our basic atomic unit (AU) is a Video.</p>
+
+<p>I recently built a web app called <a href="http://bookmarked.it/?ref=localhost">Bookmarked.it</a> that surfaces quotes from all the books you have read on your Kindle. My AU is defined as a Quote. Simple. Very well defined.**</p>
+
+<h2 id="getyourhandsonasmuchcontentaspossible">Get your hands on as much content as possible.</h2>
+
+<p>Now that you’ve defined your AU or content of your product, go out and get some! There are a bunch of ways to do this. You can create it yourself or you can have alpha or beta testers of your app generating it in some way, or you can harvest it from the web (maybe use the Twitter API to effectively simulate the type of content you are expecting to have on your site).</p>
+
+<p><strong>Why?</strong></p>
+
+<p>Because you can then go on to actually “create” simple, static HTML pages for whatever your AU is. Consider the following examples:</p>
+
+<p>At Shelby.tv our AU is a Video and we happen to have a system that collects all of the videos a user sees from their Twitter, Facebook, and Tumblr streams.</p>
+
+<p>During a year’s time we have amassed >30 Million unique videos the Internet (tweets, status updates etc) in our database that we can create static pages for. Each of the pages we can now create includes a video, what people on social services have said about the video, and links to other related videos.</p>
+
+<p>This method of generating traffic to your app doesn’t need millions of AUs to work though!</p>
+
+<p>What it does need to make it successful is a way to link everything together.</p>
+
+<p>With my app Bookmarked.it, a page with a user’s favorite quotes should have links to the book that they are from and other quotes from that book. This way when search engines crawl your site, they know how to traverse all of your content.</p>
+
+<p>Bookmarked.it has a small number of users but has ~100x the number of static pages you can visit (compared to the number of users). That’s the type of multiplier you are looking for.</p>
+
+<h2 id="submityoursitetosearchengines">Submit your site to SEARCH ENGINES.</h2>
+
+<p>You know what they say, “if you've got it, flaunt it” and the same goes for your content. Now that you have all this content how do you use it to grow your site traffic?</p>
+
+<p>Google, Bing and others allow you to explicitly tell them about your site and all this content you now have to show off. Take advantage of this opportunity. Google Webmaster Tools is simple enough and can help you get a sitemap submitted to Google in a matter of minutes.</p>
+
+<p>There are several ways to generate site maps. To generate ours at Shelby we used a Ruby gem called sitemap_generator which we found quiet effective and easy to use. A few simple commands and you can run a script that goes through your entire database to generate a sitemap index file for your entire site.Tell Google where this lives and you’ll be growing site traffic in no time!</p>
+
+<h2 id="gogogadgetorganicgrowth">(Go Go Gadget) Organic GROWTH.</h2>
+
+<p>This is one of the methods we used to grow our site traffic past 1 Million page views per month. Mega-growth didn’t happen overnight of course. Even with this method it took time to grow our site traffic above 1 Million page views. We had significant traffic to our site very quickly though, about one month to reach ~100k pageviews/mo and about three months to reach ~500k pageviews/mo.</p>
+
+<p>So wrapping up, here’s your checklist of what you need to do to make this work for you:</p>
+
+<ol>
+<li>Define what you mean by launch.  </li>
+<li>Clearly define your atomic unit.  </li>
+<li>Get your hands on as much content as possible.  </li>
+<li>Submit your content to search engines.  </li>
+<li>Grow organically.</li>
+</ol>
+
+<p>At Shelby.tv we grew our traffic in this manner so that we could do A/B testing with significant traffic letting us build, test, iterate on a very rapid cycle. This approach was very helpful in getting us to where we are today.</p>
+
+<p>And now that we launched, of course <strong>the real work is ahead of us.</strong></p>
+
+<hr/>
+
+<p>** Oh, by the way, are you interested in resurfacing all the passages you have collected on your Kindle? <a href="http://bookmarked.it/?ref=localhost">Try Bookmarked.it!</a></p>
+<!--kg-card-end: html-->
+
+                    <aside class="gh-article-meta">
+                        <div class="gh-article-meta-inner">
+                            <div class="gh-author-image-list instapaper_ignore">
+                                    <a class="gh-author-image" href="/author/henry/">
+                                            <img src="https://www.gravatar.com/avatar/57af685730300407769b60488c2e88fc?s&#x3D;250&amp;r&#x3D;x&amp;d&#x3D;mp" alt="Henry Sztul">
+                                    </a>
+                            </div>
+                            <div class="gh-article-meta-wrapper">
+                                <div class="gh-author-name-list">
+                                    <a href="/author/henry/">Henry Sztul</a>
+                                </div>
+                                <time class="gh-article-date" datetime="2013-12-03">03 Dec 2013</time>
+                            </div>
+                                <a class="gh-article-tag" href="https://henry.sztul.com/tag/dev/" style="--tag-color: ">dev</a>
+                        </div>
+                    </aside>
+                </section>
+
+                    <div class="gh-comments gh-canvas">
+                        <h2 class="gh-comments-title"><script
+    data-ghost-comment-count="6841d507cb7a47b9cb54d41e"
+    data-ghost-comment-count-empty=""
+    data-ghost-comment-count-singular="comment"
+    data-ghost-comment-count-plural="comments"
+    data-ghost-comment-count-tag="span"
+    data-ghost-comment-count-class-name=""
+    data-ghost-comment-count-autowrap="true"
+>
+</script></h2>
+                        
+        <script defer src="https://cdn.jsdelivr.net/ghost/comments-ui@~1.2/umd/comments-ui.min.js" data-locale="en" data-ghost-comments="https://henry.sztul.com/" data-api="https://henry.sztul.com/ghost/api/content/" data-admin="https://henry.sztul.com/ghost/" data-key="ba0b0a4cbb0a3ca7b0d03716ab" data-title="" data-count="false" data-post-id="6841d507cb7a47b9cb54d41e" data-color-scheme="auto" data-avatar-saturation="60" data-accent-color="#FF1A75" data-comments-enabled="all" data-publication="Henry Sztul" crossorigin="anonymous"></script>
+    
+                    </div>
+
+                <footer class="gh-article-footer gh-canvas">
+                    <nav class="gh-navigation">
+                        <div class="gh-navigation-previous">
+                                <a class="gh-navigation-link" href="/building-100-percent-in-the-cloud/">← Previous</a>
+                        </div>
+
+                        <div class="gh-navigation-middle"></div>
+
+                        <div class="gh-navigation-next">
+                                <a class="gh-navigation-link" href="/episodic-web-video-is-doomed/">Next →</a>
+                        </div>
+                    </nav>
+                </footer>
+            </article>
+    </div>
+</main>
+
+    <footer class="gh-foot gh-outer">
+        <div class="gh-foot-inner gh-inner">
+            <nav class="gh-foot-menu">
+                <ul class="nav">
+    <li class="nav-sign-up"><a href="#/portal/">Sign up</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-copyright">
+                    Henry Sztul © 2025. Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/built/main.min.js?v=054beaa5c2"></script>
+
+
+
+</body>
+
+</html>
